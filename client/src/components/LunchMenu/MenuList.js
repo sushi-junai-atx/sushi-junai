@@ -53,8 +53,8 @@ function Menu() {
                     </Container>
                 </Row>
                 <Row>
-                <div className="section-head"><h2 id="LunchSpecials">Lunch Rice Specials</h2>
-                <h5>Served with miso soup and house salad</h5></div>
+                <div className="section-head"><h2 id="LunchSpecials">Lunch Specials</h2>
+                <h5>Served with miso soup</h5></div>
                     <Container>
                         {
                             lunchSpecials.map((item, idx) => {
@@ -72,8 +72,7 @@ function Menu() {
                     </Container>
                 </Row>
                 <Row>
-                <div className="section-head"><h2 id="Combos">Combos</h2>
-                <h5>Served with house salad</h5></div>
+                <div className="section-head"><h2 id="Combos">Combos</h2></div>
                     <Container>
                         {
                             combos.map((item, idx) => {
@@ -94,7 +93,7 @@ function Menu() {
                 </Row>
                 <Row>
                 <div className="section-head"><h2 id="LunchBox">Lunch Box</h2>
-                <h5>Served with miso soup, house salad, mixed tempura, 2pcs pork gyoza, and rice in a bento box</h5></div>
+                <h5>Served with miso soup, house salad, mixed tempura and rice in a bento box</h5></div>
                     <Container>
                         {
                             lunchBox.map((item, idx) => {
