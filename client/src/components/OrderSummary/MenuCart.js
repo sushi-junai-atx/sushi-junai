@@ -66,7 +66,7 @@ const MenuCart = (props) => {
     const bakedRolls = menuCart.filter(item => item.category === "Baked Rolls");
     const desserts = menuCart.filter(item => item.category === "Desserts");
 
-    const nextRound = () => {
+    function nextRound () => {
         props.getTotal(isNaN(accumulativeTotal) ? cartCostTotal : accumulativeTotal)
         props.savePastCart(menuCart)
         props.clearCart()
@@ -155,7 +155,7 @@ const MenuCart = (props) => {
                                     {desserts.map((item, idx) => <MenuCartItem key={idx} item={item} incrementItem={props.incrementItem} decrementItem={props.decrementItem} removeItem={props.removeItem} onetime={used.includes(item.name)} />)}
                                 </tbody>
                                 {/* TODO: Fix NEXT ROUND button */}
-                                {/* {!menuCart.length ? "" : <Button id="seven" btn="btn btn1" onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> } */}
+                                {!menuCart.length ? "" : <Button id="seven" btn="btn btn1" onClick={() => nextRound()} style={{display:"inline-block"}}>Next Round </Button> }
                                 <VisibleNotification/>
                             </Table>
                         </TabPane>
