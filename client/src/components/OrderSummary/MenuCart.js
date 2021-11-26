@@ -66,7 +66,7 @@ const MenuCart = (props) => {
     const bakedRolls = menuCart.filter(item => item.category === "Baked Rolls");
     const desserts = menuCart.filter(item => item.category === "Desserts");
 
-    function nextRound () => {
+    function nextRound () {
         props.getTotal(isNaN(accumulativeTotal) ? cartCostTotal : accumulativeTotal)
         props.savePastCart(menuCart)
         props.clearCart()
